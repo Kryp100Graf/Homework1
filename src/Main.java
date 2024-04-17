@@ -12,7 +12,13 @@ public class Main {
         Variables.task7();
         Variables.task8();
 
+        Conditions.task1();
+        Conditions.task2();
+        Conditions.task3();
+        Conditions.task4();
+        Conditions.task5();
+        Conditions.task6();
+        Conditions.task7();
     }
-
 
 }
