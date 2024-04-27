@@ -19,6 +19,13 @@ public class Main {
         Conditions.task5();
         Conditions.task6();
         Conditions.task7();
+        Conditions.task8();
+        Conditions.task9();
+        Conditions.task10();
+        Conditions.task11();
+        Conditions.task12();
+
+
     }
 
 }
