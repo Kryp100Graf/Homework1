@@ -62,6 +62,7 @@ public class Variables {
         System.out.println("\nЗадача 3:\n" + "\ndog - 3.5 = " + dog +
                 "\ncat - 1.6 = " + cat + "\npaper - 7639 = " + paper);
     }
+
     public static void task4() {
 //        Задача 4
         /* Инициализируйте (присвойте значение) переменную friend значением 19.
@@ -86,6 +87,7 @@ public class Variables {
         friend = friend / 7;
         System.out.println("friend / 7 = " + friend);
     }
+
     public static void task5() {
 //        Задача 5
         /*
@@ -115,6 +117,7 @@ public class Variables {
         frog = frog + 4;
         System.out.println("frog + 4 = " + frog);
     }
+
     public static void task6() {
 /*
         Задача 6
@@ -147,6 +150,7 @@ public class Variables {
         System.out.println("\nЗадача 6:\n\nОбщий вес бойцов " + sumWeight + "\nРазница в весе составляет " + diffWeight);
 
     }
+
     public static void task7() {
     /*
     Задача 7
@@ -169,6 +173,7 @@ public class Variables {
         diffWeight = secondBoxerWeight % firstBoxerWeight;
         System.out.println("Разница в весе (остаток от деления) составляет " + diffWeight);
     }
+
     public static void task8() {
                 /*
                 Задача 8
@@ -200,6 +205,6 @@ public class Variables {
         countOfEmployee = countOfEmployee + 94;
         workingHours = countOfEmployee * hoursPerEmployee;
         System.out.println("Если в компании работает " + countOfEmployee + " человека, то всего " + workingHours +
-                " часов работы может быть поделено между сотрудниками");
+                " часов работы может быть поделено между сотрудниками\n");
     }
 }
