@@ -25,24 +25,14 @@ public class Main {
 //        Conditions.task11();
 //        Conditions.task12();
 
-        Cycles.t1();
-        Cycles.t2();
-        Cycles.t3();
-        Cycles.t4();
-        Cycles.t5();
-        Cycles.t6();
-        Cycles.t7();
-        Cycles.t8();
-        Cycles.t9();
-        Cycles.t10();
-        Cycles.t11();
-        Cycles.t12();
-        Cycles.t13();
-        Cycles.t14();
-        Cycles.t15();
-        Cycles.t16();
-        Cycles.t17();
-        Cycles.t18();
+        Arrays.t1();
+        Arrays.t2();
+        Arrays.t3();
+        Arrays.t4();
+        Arrays.t5();
+        Arrays.t6();
+        Arrays.t7();
+        Arrays.t8();
 
     }
 
