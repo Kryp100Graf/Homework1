@@ -125,8 +125,8 @@ public class Arrays {
         Результат программы вывели в консоль согласно условию задания.
          */
         int[] arr = generateRandomArray();
-        int min = arr[0];
-        int max = arr[arr.length - 1];
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         for (int i : arr) {
             if (min > i) {
                 min = i;
