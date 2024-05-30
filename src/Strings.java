@@ -157,12 +157,21 @@ public class Strings {
         lastTwo("cat") → "cta"
         lastTwo("ab") → "ba"
          */
+        boolean checkInput = true;
         System.out.println("Введи строку:");
-        StringBuilder str = new StringBuilder(sc.nextLine());
-        StringBuilder reverseLastTwoSymbols = new StringBuilder(str.substring(str.length() - 2, str.length()));
-        reverseLastTwoSymbols.reverse();
-        System.out.println("Результат:");
-        System.out.println(str.delete(str.length() - 2, str.length()).append(reverseLastTwoSymbols));
+        while (checkInput) {
+            StringBuilder str = new StringBuilder(sc.nextLine());
+
+            if (str.length() > 1) {
+                checkInput = false;
+                StringBuilder reverseLastTwoSymbols = new StringBuilder(str.substring(str.length() - 2, str.length()));
+                reverseLastTwoSymbols.reverse();
+                System.out.println("Результат:");
+                System.out.println(str.delete(str.length() - 2, str.length()).append(reverseLastTwoSymbols));
+            } else {
+                System.out.println("Введите строку из не менее чем 2 символов:");
+            }
+        }
 //        StringBuilder buff = str.delete(l - 2,l).
 //                append(str.charAt(l-1)).append(str.charAt(l-2));
 

@@ -10,9 +10,9 @@ public class Main {
 //        Strings.t4();
 //        Strings.t5();
 //        Strings.t6();
-//        Strings.t7();
+        Strings.t7();
 //        Strings.t8();
-        Strings.t9();
+//        Strings.t9();
 
 //        Задачи по переменным
 //        Variables.task1();
