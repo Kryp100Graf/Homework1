@@ -35,6 +35,17 @@ public class Main {
 //        Conditions.task10();
 //        Conditions.task11();
 //        Conditions.task12();
+// <<<<<<< arrays
+
+//        Arrays.t1();
+//         Arrays.t2();
+//         Arrays.t3();
+//         Arrays.t4();
+//         Arrays.t5();
+//         Arrays.t6();
+//         Arrays.t7();
+//         Arrays.t8();
+// =======
 //
 ////        Задачи по переменным
 //        Variables.task1();
@@ -43,6 +54,7 @@ public class Main {
 //        Variables.task6();
 //        Variables.task7();
 //        Variables.task8();
+// >>>>>>> master
 
     }
 
