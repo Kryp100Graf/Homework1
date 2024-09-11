@@ -6,6 +6,8 @@ public class Main {
 
 		Methods.t1();
 		Methods.t2();
+		Methods.t3();
+
 //        Strings.t1();
 //        Strings.t2();
 //        Strings.t3();

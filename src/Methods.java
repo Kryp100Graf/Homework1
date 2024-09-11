@@ -62,11 +62,49 @@ public class Methods {
         Результат в консоль выводится согласно всем вводным условиям.
          */
 
-		System.out.println("\nЗадача 9");
+		System.out.println("\nЗадача 2");
 		int clientDeviceYear = 2015;
 		int clientOS = 0;
-		msg(clientDeviceYear, clientOS);
+		printMsg(clientDeviceYear, clientOS);
 
+	}
+
+	public static void t3() {
+		/*
+		Возвращаемся к задаче на расчет дней доставки банковской карты.
+		Текст прошлого задания
+		В банке для клиентов организовывается доставка карт на дом. Чтобы известить клиента о том,
+		когда будет доставлена его карта, нужно знать расстояние от офиса до адреса доставки.
+
+		Правила доставки такие:
+		Доставка в пределах 20 км занимает сутки.
+		Доставка в пределах от 20 км до 60 км добавляет еще один день доставки.
+		Доставка в пределах от 60 км до 100 км добавляет еще одни сутки.
+		Свыше 100 км доставки нет.
+
+		То есть с каждым следующим интервалом доставки срок увеличивается на 1 день.
+		Напишите программу, которая выдает сообщение в консоль: "Потребуется дней: " + срок доставки.
+		Объявите целочисленную переменную deliveryDistance = 95, которая содержит дистанцию до клиента.
+		Ваша задача — доработать код, а именно написать метод, который на вход принимает дистанцию
+		и возвращает итоговое количество дней доставки.
+
+		Критерии оценки
+		Метод написали корректно.
+		Все условия задачи соблюдаются.
+		 */
+		System.out.println("\nЗадача 3");
+		int deliveryDistance = 95;
+		int deliveryTime = calculateDeliveryTime(deliveryDistance);
+
+		String deliveryMessage = String.format("Потребуется дней: %o", deliveryTime);
+		String overRangeDeliveryMessage = "Свыше 100 км доставки нет";
+
+		System.out.println(String.format("Дистанция %s", deliveryDistance));
+		if (deliveryTime < 4) {
+			System.out.println(deliveryMessage);
+		} else {
+			System.out.println(overRangeDeliveryMessage);
+		}
 	}
 
 	private static boolean checkYear(int year) {
@@ -80,7 +118,7 @@ public class Methods {
 
 	}
 
-	private static void msg(int clientDeviceYear, int clientOS) {
+	private static void printMsg(int clientDeviceYear, int clientOS) {
 
 		int iOS = 0;
 		int android = 1;
@@ -106,5 +144,23 @@ public class Methods {
 		} else {
 			System.out.println(unknownOS);
 		}
+	}
+
+	private static int calculateDeliveryTime(int deliveryDistance) {
+
+		int oneDayRange = 20;
+		int twoDayRange = 60;
+		int threeDayRange = 100;
+		int deliveryTime = 1;
+
+		if (deliveryDistance <= oneDayRange) {
+		} else if (deliveryDistance <= twoDayRange) {
+			deliveryTime += 1;
+		} else if (deliveryDistance <= threeDayRange) {
+			deliveryTime += 2;
+		} else {
+			deliveryTime += 3;
+		}
+		return deliveryTime;
 	}
 }
