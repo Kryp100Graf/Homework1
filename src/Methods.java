@@ -42,7 +42,7 @@ public class Methods {
         Текст прошлого задания
         У банка появилось мобильное приложение. Когда пользователь заходит на сайт с телефона, ему предлагается скачать приложение с учетом операционной системы и года выпуска телефона.
         Ваша задача — написать программу, которая выдает соответствующее сообщение клиенту при наличии двух условий.
-        Если год выпускаzранее 2015 года, то к сообщению об установке нужно добавить информацию об облегченной версии:
+        Если год выпуска ранее 2015 года, то к сообщению об установке нужно добавить информацию об облегченной версии:
         Для iOS оно будет звучать так: «Установите облегченную версию приложения для iOS по ссылке».
         Для Android: «Установите облегченную версию приложения для Android по ссылке».
         Для пользователей телефонов 2015 года выпуска и позже нужно вывести обычное предложение об установке приложения.
@@ -62,7 +62,11 @@ public class Methods {
         Результат в консоль выводится согласно всем вводным условиям.
          */
 
-        
+		System.out.println("\nЗадача 9");
+		int clientDeviceYear = 2015;
+		int clientOS = 0;
+		msg(clientDeviceYear, clientOS);
+
 	}
 
 	private static boolean checkYear(int year) {
@@ -74,5 +78,33 @@ public class Methods {
 		}
 		return result;
 
+	}
+
+	private static void msg(int clientDeviceYear, int clientOS) {
+
+		int iOS = 0;
+		int android = 1;
+		int conditionYear = 2015;
+		String iOSMessage = "Установите версию приложения для iOS по ссылке";
+		String androidMessage = "Установите версию приложения для android по ссылке";
+		String iOSLightMessage = "Установите облегченную версию приложения для iOS по ссылке";
+		String androidLightMessage = "Установите облегченную версию приложения для android по ссылке";
+		String unknownOS = "Неизвестная операционная система";
+
+		if (clientOS == iOS) {
+			if (clientDeviceYear >= conditionYear) {
+				System.out.println(iOSMessage);
+			} else {
+				System.out.println(iOSLightMessage);
+			}
+		} else if (clientOS == android) {
+			if (clientDeviceYear >= conditionYear) {
+				System.out.println(androidMessage);
+			} else {
+				System.out.println(androidLightMessage);
+			}
+		} else {
+			System.out.println(unknownOS);
+		}
 	}
 }

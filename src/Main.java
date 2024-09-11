@@ -1,11 +1,11 @@
 public class Main {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        var text = "Привет, Мир!";
-        System.out.println(text);
+		var text = "Привет, Мир!";
+		System.out.println(text);
 
-        Methods.t1();
-
+		Methods.t1();
+		Methods.t2();
 //        Strings.t1();
 //        Strings.t2();
 //        Strings.t3();
@@ -45,6 +45,6 @@ public class Main {
 //        Arrays.t6();
 //        Arrays.t7();
 //        Arrays.t8();
-    }
+	}
 
 }
