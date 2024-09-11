@@ -4,13 +4,15 @@ public class Main {
         var text = "Привет, Мир!";
         System.out.println(text);
 
+        Methods.t1();
+
 //        Strings.t1();
 //        Strings.t2();
 //        Strings.t3();
 //        Strings.t4();
 //        Strings.t5();
 //        Strings.t6();
-        Strings.t7();
+//        Strings.t7();
 //        Strings.t8();
 //        Strings.t9();
 
