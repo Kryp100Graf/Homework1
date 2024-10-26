@@ -1,8 +1,12 @@
 public class Main {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        var text = "Привет, Мир!";
-        System.out.println(text);
+		var text = "Привет, Мир!";
+		System.out.println(text);
+
+		Methods.t1();
+		Methods.t2();
+		Methods.t3();
 
 //        Strings.t1();
 //        Strings.t2();
@@ -10,7 +14,7 @@ public class Main {
 //        Strings.t4();
 //        Strings.t5();
 //        Strings.t6();
-        Strings.t7();
+//        Strings.t7();
 //        Strings.t8();
 //        Strings.t9();
 
@@ -43,6 +47,6 @@ public class Main {
 //        Arrays.t6();
 //        Arrays.t7();
 //        Arrays.t8();
-    }
+	}
 
 }
